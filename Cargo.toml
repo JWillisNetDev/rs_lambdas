@@ -1,0 +1,9 @@
+[package]
+name = "rs_lambdas"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lambda_runtime = "0.13.0"
+serde_json = "1.0.128"
+tokio = "1.40.0"
