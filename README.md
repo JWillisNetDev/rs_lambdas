@@ -23,6 +23,6 @@ This probably means that Windows lacks a Unix tool necessary for a crate's build
 The solution is to switch our compiler to a more aggressive option with `cross`
 
 1. Install `cross` using `cargo install cross`
-  - `cross` is a project which activates activates and builds your Rust code on more consistent Linux containers. Unfortunately, this comes at the cost of speed.
+    - `cross` is a project which activates activates and builds your Rust code on more consistent Linux containers. Unfortunately, this comes at the cost of speed.
 1. Run the Docker daemon (service) and confirm Docker is running using `docker ps -a`
 1. When building and packaging your Lambda function source code, use `cargo lambda build --release --compiler cross` instead of allowing the compiler flag to fall-through to its default value.
